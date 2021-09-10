@@ -1,0 +1,1031 @@
+@import "./utils.scss";
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 12px;
+
+  @media (min-width: $tablet) {
+    padding-top: 23px;
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: $laptop) {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+
+  &__menu-icon {
+
+    @media (min-width: $laptop) {
+      display: none;
+    }
+  }
+
+  &__logo {
+    width: 24px;
+    height: 24px;
+
+    @media (min-width: $laptop) {
+      display: none;
+    }
+  }
+
+  &__logo-w-text {
+    display: none;
+    height: 50px;
+    
+    @media (min-width: $laptop) {
+      display: block;
+    }
+  }
+
+  &__nav {
+    display: none;
+
+    position: absolute;
+    top: 52px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media (min-width: $laptop) {
+      display: block;
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    justify-content: center;
+
+    li {
+      margin-left: 40px;
+
+      &:first-of-type {
+        margin-left: 0;
+      }
+
+      a {
+        font-size: 18px;
+        text-decoration: none;
+        color: $green;
+      }
+    }
+  }
+}
+
+.top {
+  text-align: center;
+
+  @media (min-width: $laptop) {
+    text-align: left;
+  }
+
+  &__img {
+    width: 100%;
+
+    @media (min-width: $tablet) {
+      max-width: 714px;
+    }
+
+    @media (min-width: $laptop) {
+      width: auto;
+      height: 390px;
+      float: right;
+    }
+  }
+
+  &__title {
+    max-width: 460px;
+    margin: 25px auto 0;
+    font-size: 24px;
+
+    @media (min-width: $tablet) {
+      margin-top: 50px;
+      font-size: 36px;
+    }
+
+    @media (min-width: $laptop) {
+      margin: 0;
+      font-size: 60px;
+      line-height: 72px;
+    }
+  }
+
+  &__under-title {
+    max-width: 240px;
+    margin: 12px auto 0;
+    font-size: 18px;
+
+    @media (min-width: $tablet) {
+      margin-top: 20px;
+    }
+
+    @media (min-width: $laptop) {
+      max-width: 460px;
+      margin: 30px 0 0;
+      font-size: 22px;
+    }
+  }
+
+  &__button {
+    margin: 19px auto 0;
+
+    @media (min-width: $tablet) {
+      margin-top: 30px;
+    }
+
+    @media (min-width: $laptop) {
+      margin: 50px 0 0;
+    }
+  }
+
+  &__citation {
+    max-width: 280px;
+    margin: 60px auto 0;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: $green;
+    text-transform: uppercase;
+
+    @media (min-width: $tablet) {
+      margin-top: 100px;
+      text-align: center;
+    }
+
+    @media (min-width: $laptop) {
+      display: none;
+    }
+  }
+}
+
+.citation {
+  display: none;
+  width: 100%;
+  margin-top: 200px;
+
+  @media (min-width: $laptop) {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  &__left {
+    flex-basis: 50%;
+    margin-right: 5%;
+  }
+
+  &__right {
+    flex-basis: 50%;
+    margin-left: 5%;
+  }
+
+  &__p {
+    max-width: 370px;
+    margin-top: 100px;
+    margin-left: auto;
+  }
+
+  &__body {
+    max-width: 370px;
+    margin-right: auto;
+    margin-bottom: 100px;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $green;
+  }
+
+  &__hr {
+    height: 1px;
+    background-color: rgba(52, 79, 16, 0.5);
+  }
+}
+
+.about {
+  margin-top: 60px;
+
+  @media (min-width: $tablet) {
+    margin-top: 100px;
+  }
+
+  @media (min-width: $laptop) {
+    margin-top: 200px;
+  }
+
+  &__imgs {
+    display: none;
+
+    @media (min-width: $tablet) {
+      display: block;
+      margin-left: 30px;
+      float: right;
+    }
+
+    @media (min-width: $desktop) {
+      margin-left: 100px;
+    }
+  }
+
+  &__img {
+    height: 340px;
+
+    @media (min-width: $laptop) {
+      margin-right: 20px;
+      height: 450px;
+    }
+  }
+
+  &__cropped-img {
+    display: none;
+    height: 320px;
+
+    @media (min-width: $laptop) {
+      display: inline-block;
+    }
+  }
+
+  &__content {
+
+    @media (min-width: $laptop) {
+      max-width: 380px;
+    }
+  }
+
+  &__p {
+    margin-top: 12px;
+
+    @media (min-width: $laptop) {
+      margin-top: 25px;
+    }
+
+    &--extra {
+      display: none;
+
+      @media (min-width: $laptop) {
+        display: block;
+      }
+    }
+  }
+
+  &__link {
+    margin-top: 20px;
+
+    @media (min-width: $laptop) {
+      margin-top: 40px;
+    }
+  }
+}
+
+.shop {
+  margin-top: 60px;
+
+  @media (min-width: $tablet) {
+    margin-top: 120px;
+  }
+
+  @media (min-width: $laptop) {
+    margin-top: 200px;
+  }
+
+  &__title {
+    text-align: center;
+
+    @media (min-width: $tablet) {
+      text-align: left;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 12px;
+    font-size: 14px;
+
+    @media (min-width: $tablet) {
+      width: 300px;
+    }
+
+    @media (min-width: $laptop) {
+      width: 400px;
+      margin-top: 20px;
+      font-size: 18px;
+    }
+  }
+
+  &__menu-elem {
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $grey;
+
+    &--active {
+      color: initial;
+
+      &::after {
+        content: "";
+        display: block;
+        height: 2px;
+        margin-top: 10px;
+        background-color: $text-color;
+
+        @media (min-width: $laptop) {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+
+  &__products {
+    margin-top: 20px;
+
+    @media (min-width: $laptop) {
+      margin-top: 60px;
+    }
+  }
+
+  &__button {
+    display: block;
+    margin: 30px auto 0;
+  }
+}
+
+.creators {
+  margin-top: 60px;
+
+  @media (min-width: $tablet) {
+    margin-top: 100px;
+  }
+
+  @media (min-width: $laptop) {
+    margin-top: 200px;
+  }
+
+  &__img {
+    display: none;
+
+    @media (min-width: $tablet) {
+      display: block;
+      width: 40%;
+      margin-left: 30px;
+      float: right;
+    }
+
+    @media (min-width: $laptop) {
+      width: auto;
+      height: 620px;
+    }
+  }
+
+  &__content {
+
+    @media (min-width: $laptop) {
+      max-width: 380px;
+    }
+  }
+
+  &__p {
+    margin-top: 12px;
+
+    @media (min-width: $laptop) {
+      margin-top: 25px;
+    }
+
+    &--extra {
+      display: none;
+
+      @media (min-width: $laptop) {
+        display: block;
+      }
+    }
+  }
+
+  &__link {
+    margin-top: 20px;
+
+    @media (min-width: $laptop) {
+      margin-top: 40px;
+    }
+  }
+
+  &__button {
+    margin-top: 30px;
+
+    @media (min-width: $laptop) {
+      margin-top: 50px;
+    }
+  }
+}
+
+.powder {
+  margin-top: 60px;
+
+  @media (min-width: $tablet) {
+    margin-top: 120px;
+  }
+
+  @media (min-width: $laptop) {
+    margin-top: 200px;
+  }
+
+  &__title {
+    max-width: 25%;
+
+    @media (min-width: $laptop) {
+      float: left;
+    }
+  }
+
+  &__bottle {
+    float: right;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    width: 90px;
+    margin-right: 210px;
+    margin-left: auto;
+    text-align: right;
+
+    @media (min-width: $tablet) {
+      margin-right: 350px;
+    }
+
+    @media (min-width: $laptop) {
+      margin-right: 450px;
+    }
+
+    > li {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -105px;
+        width: 76px;
+        height: 1px;
+        background-color: $text-color;
+      }
+    }
+
+    > :nth-child(1) {
+      margin-top: 38px;
+    }
+
+    > :nth-child(2) {
+      margin-top: 52px;
+    }
+
+    > :nth-child(3) {
+      margin-top: 41px;
+    }
+
+    > :nth-child(4) {
+      margin-top: 36px;
+    }
+
+    > :nth-child(5) {
+      margin-top: 49px;
+    }
+  }
+
+  &__link {
+    margin-top: 58px;
+
+    @media (min-width: $tablet) {
+      margin-top: 0;
+    }
+  }
+}
+
+.points {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin-top: 150px;
+  }
+
+  @media (min-width: $laptop) {
+    margin-top: 250px;
+  }
+
+  &__point {
+    margin-top: 50px;
+
+    @media (min-width: $tablet) {
+      margin-top: 0;
+      flex-basis: 25%;
+    }
+  }
+
+  &__p {
+    margin-top: 20px;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+}
+
+.contact {
+  margin-top: 60px;
+
+  @media (min-width: $tablet) {
+    margin-top: 150px;
+  }
+
+  @media (min-width: $laptop) {
+    margin-top: 250px;
+  }
+
+  &__img {
+    display: none;
+
+    @media (min-width: $tablet) {
+      display: block;
+      width: 45%;
+      float: right;
+    }
+  }
+  
+  &__content {
+
+    @media (min-width: $tablet) {
+      max-width: 45%;
+    }
+  }
+
+  &__p {
+    margin-top: 12px;
+
+    @media (min-width: $laptop) {
+      margin-top: 20px;
+      font-size: 24px;
+    }
+  }
+
+  &__last-input {
+    margin-top: 45px;
+
+    @media (min-width: $laptop) {
+      margin-top: 60px;
+    }
+  }
+
+  &__button {
+    margin-top: 30px;
+
+    @media (min-width: $laptop) {
+      margin-top: 50px;
+    }
+  }
+}
+
+.footer {
+  margin-top: 60px;
+  padding-top: 1px;
+  padding-bottom: 50px;
+  font-size: 14px;
+  color: #e4dfd3;
+  background-color: #8c9772;
+
+  @media (min-width: $tablet) {
+    margin-top: 100px;
+  }
+
+  @media (min-width: $laptop) {
+    margin-top: 150px;
+    padding-bottom: 66px;
+    font-size: 18px;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  &__list1 {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+
+    @media (min-width: $tablet) {
+      margin-top: 0;
+      float: left;
+    }
+
+    @media (min-width: $laptop) {
+      flex-direction: row;
+    }
+
+    li {
+      margin-top: 20px;
+
+      @media (min-width: $laptop) {
+        margin-top: 0;
+        margin-right: 40px;
+      }
+
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__icons {
+
+    @media (min-width: $laptop) {
+      display: none;
+    }
+  }
+
+  &__icon {
+    margin-right: 20px;
+  }
+
+  &__list2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+
+    @media (min-width: $tablet) {
+      margin-left: 50%;
+    }
+
+    @media (min-width: $laptop) {
+      margin-top: 60px;
+    }
+
+    li {
+      margin-top: 12px;
+
+      @media (min-width: $laptop) {
+        margin-top: 20px;
+      }
+
+      &:first-of-type {
+
+        @media (min-width: $tablet) {
+          margin-top: 0;
+        }
+      }
+
+      &:last-of-type {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &__copyright {
+    width: 80%;
+    margin: 30px auto 0;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    text-align: center;
+
+    @media (min-width: $tablet) {
+      width: max-content;
+      margin: 50px 0 0;
+    }
+
+    @media (min-width: $laptop) {
+      margin-top: 30px;
+      float: left;
+    }
+  }
+
+  &__icons-laptop {
+    display: none;
+
+    @media (min-width: $laptop) {
+      display: block;
+      margin-top: 30px;
+      margin-left: 50%;
+    }
+  }
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -10;
+  overflow-y: auto;
+  background-color: $text-color;
+  opacity: 0;
+  transition: opacity 0.3s;
+
+  &--opened {
+    z-index: 10;
+    opacity: 1;
+
+    @media (min-width: $laptop) {
+      display: none;
+    }
+  }
+
+  &__list {
+    margin-top: 80px;
+
+    @media (min-width: $tablet) {
+      margin-top: 145px;
+    }
+
+    li {
+      margin-top: 30px;
+      text-align: center;
+      border-bottom: 1px solid $grey;
+    }
+
+    a {
+      padding: 10px;
+      font-size: 18px;
+      text-decoration: none;
+      color: beige;
+    }
+  }
+}
+
+.checkout {
+
+  &__title1 {
+    margin-top: 20px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    border-bottom: 1px solid #bdbdbd;
+
+    @media (min-width: $tablet) {
+      width: 220px;
+    }
+
+    @media (min-width: $laptop) {
+      width: 100%;
+      margin-top: 0;
+      font-size: 36px;
+      text-transform: capitalize;
+      color: $green;
+      text-align: center;
+      border: none;
+    }
+  }
+
+  &__steps {
+    display: none;
+
+    @media (min-width: $laptop) {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      width: 550px;
+      margin: 30px auto 60px;
+    }
+  }
+
+  &__underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 33%;
+    height: 1px;
+    margin: 0;
+    border: none;
+    background-color: $text-color;
+    transition: margin-left 0.6s;
+  }
+
+  &__step {
+    padding-bottom: 12px;
+    flex-basis: 0;
+    flex-grow: 1;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-align: center;
+    color: $grey;
+    transition: color 0.5s, opacity 0.7s;
+
+    &.completed {
+      color: $green;
+      opacity: 0.6;
+    }
+
+    &.active {
+      color: initial;
+
+      &.step-2 ~ hr {
+        margin-left: 33%;
+      }
+
+      &.step-3 ~ hr {
+        margin-left: 66%;
+      }
+    }
+  }
+
+  &__sections {
+    display: flex;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+  }
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 100vw;
+    min-height: 78vh;
+    padding-bottom: 20px;
+    scroll-snap-align: end;
+
+    @media (min-width: $laptop) {
+      display: block;
+      min-height: auto;
+      padding-bottom: 60px;
+    }
+  }
+
+  &__title2 {
+    margin: 20px 0 30px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media (min-width: $tablet) {
+      margin-top: 60px;
+    }
+
+    @media (min-width: $laptop) {
+      display: none;
+    }
+  }
+
+  &__button {
+    margin: 30px auto 0;
+
+    @media (min-width: $laptop) {
+      margin-top: 60px;
+    }
+  }
+}
+
+.shipping {
+
+  &__inputs {
+
+    @media (min-width: $tablet) {
+      width: max-content;
+      margin: 0 auto;
+    }
+
+    @media (min-width: $laptop) {
+      display: flex;
+    }
+  }
+
+  &__left-inputs {
+
+    @media (min-width: $laptop) {
+      margin-right: 150px;
+    }
+    
+    @media (min-width: $desktop) {
+      margin-right: 220px;
+    }
+  }
+
+  &__input {
+
+    @media (min-width: $tablet) {
+      width: 280px;
+    }
+
+    @media (min-width: $laptop) {
+      margin-top: 40px;
+      padding-bottom: 10px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 380px;
+    }
+
+    &:first-child {
+
+      @media (min-width: $laptop) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__error {
+    display: none;
+    margin-top: 6px;
+    font-size: 13px;
+    color: #ad0202;
+
+    @media (min-width: $laptop) {
+      position: absolute;
+    }
+  }
+
+  &__is-valid:invalid + p {
+    display: block;
+  }
+}
+
+.payment {
+  text-align: center;
+
+  &__steps {
+
+    @media (min-width: $laptop) {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      width: 500px;
+      margin: 60px auto 0;
+    }
+  }
+
+  &__card {
+    margin-top: 50px;
+
+    @media (min-width: $laptop) {
+      margin-top: 0;
+    }
+  }
+
+  &__delivery {
+    flex-basis: 30%;
+    margin-top: 35px;
+
+    @media (min-width: $laptop) {
+      margin-top: 0;
+    }
+  }
+
+  &__p {
+    margin-top: 12px;
+
+    @media (min-width: $laptop) {
+      font-size: 20px;
+    }
+  }
+}
+
+.confirmation {
+  text-align: center;
+
+  &__p {
+    margin-top: 70px;
+    font-size: 24px;
+
+    @media (min-width: $laptop) {
+      margin-top: 60px;
+      font-size: 48px;
+    }
+  }
+
+  &__img {
+    margin-top: 30px;
+  }
+
+  &__link {
+    display: block;
+    width: max-content;
+    margin: 30px auto 0;
+    padding-bottom: 5px;
+    color: #333;
+    border-bottom-color: #333;
+
+    @media (min-width: $laptop) {
+      margin: 90px 0 0;
+      border: none;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 80px;
+        height: 1px;
+        margin-right: 20px;
+        margin-bottom: 0.3em;
+        background-color: $text-color;
+      }
+    }
+  }
+}

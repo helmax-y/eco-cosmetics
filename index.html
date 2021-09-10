@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="index.css">
+  <title>Eco-cosmetics</title>
+</head>
+<body>
+  <header class="header container">
+    <button class="header__menu-icon" type="button">
+      <img src="./images/menuIcon.png" alt="Menu icon">
+    </button>
+
+    <img class="header__logo" src="./images/logoIcon.png" alt="Logotype">
+    <img class="header__logo-w-text" src="./images/logoIconWithText.png" alt="Logotype">
+
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+
+    <button class="header__basket" type="button">
+      <img src="./images/basketIcon.png" alt="Basket icon">
+    </button>
+  </header>
+
+  <main>
+    <section class="top">
+      <div class="container container--from-tablet">
+        <img class="top__img" src="./images/topImage.png" alt="Jars with cosmetics">
+      </div>
+
+      <div class="container container--desktop">
+        <h1 class="top__title">Brand of eco-cosmetics and magic candles</h1>
+        <p class="top__under-title">20% of sales at a wild bird shelter</p>
+        <button class="button top__button">Shop</button>
+        <p class="top__citation">If you choose the gifts of nature and care of it - scroll down</p>
+      </div>
+    </section>
+
+    <section class="citation">
+      <div class="citation__left">
+        <hr class="citation__hr">
+        <p class="citation__p">
+          Biologists say that birds are indicators of the environmental situation, and over the past half century, the population of seabirds has declined by 70%. Birds die due to environmental problems and human intervention in the natural environment.
+        </p>
+      </div>
+
+      <div class="citation__right">
+        <p class="citation__body">
+          If you choose the gifts of nature and care of it - scroll down
+        </p>
+        <hr class="citation__hr">
+      </div>
+    </section>
+
+    <section class="about container container--left-side-from-tablet container--desktop" id="about">
+      <div class="decor">Witch of mountain winds</div>
+
+      <div class="about__imgs">
+        <picture>
+          <source media="(min-width: 1024px)" srcset="./images/aboutSectionMD.png">
+          <img 
+            class="about__img"
+            src="./images/aboutSectionSM.png"
+            alt="Jar of cosmetics"
+          >
+        </picture>
+
+        <img class="about__cropped-img" src="./images/aboutSectionCropped.png" alt="Jar of cosmatics, cropped pic">
+      </div>
+
+      <div class="about__content">
+        <h2 class="h2">About our brand</h2>
+        <p class="about__p">
+          Our brand cosmetics are made from natural ingredients and we are promoting them to the masses. Shampoo, hair conditioner, soap - in recycled paper. Creams, oils, washing products in glass containers with recycled paper labels. No synthetics and microplastics in cosmetics. And the packaging from it can be returned for recycling or reused.
+        </p>
+        <p class="about__p about__p--extra">
+          We are all neighbors of one big House. And we must protect what we have. Destroying everything around for the sake of consumerism and imaginary convenience, we destroy what does not belong to us. Be aware of your choice!
+        </p>
+        <a class="link about__link" href="">Learn more</a>
+      </div>
+    </section>
+  
+    <section class="shop" id="shop">
+      <div class="container">
+        <h2 class="h2 shop__title">Shop</h2>
+  
+        <ul class="shop__menu">
+          <li class="shop__menu-elem shop__menu-elem--active">Face</li>
+          <li class="shop__menu-elem">Body</li>
+          <li class="shop__menu-elem">Hair</li>
+          <li class="shop__menu-elem">Candles</li>
+        </ul>
+      </div>
+
+      <div class="carousel shop__products container container--left-side-from-tablet">
+        <ul class="carousel__elements">
+          <li class="carousel__element" id="item1">
+            <img class="carousel__img" src="./images/oil.png" alt="Hydrophilic oil">
+            <h3 class="carousel__img-title">Hydrophilic Oil</h3>
+            <p class="carousel__price">160 UAH</p>
+          </li>
+  
+          <li class="carousel__element" id="item2">
+            <img class="carousel__img" src="./images/faceCream.png" alt="Face cream">
+            <h3 class="carousel__img-title">Face cream</h3>
+            <p class="carousel__price">210 UAH</p>
+          </li>
+  
+          <li class="carousel__element" id="item3">
+            <img class="carousel__img" src="./images/ubtan.png" alt="Ubtan">
+            <h3 class="carousel__img-title">Ubtan</h3>
+            <p class="carousel__price">160 UAH</p>
+          </li>
+
+          <li class="carousel__element" id="item4">
+            <img class="carousel__img" src="./images/shampoo.png" alt="Almond Shampoo with Lavender Oil">
+            <h3 class="carousel__img-title">Almond Shampoo</h3>
+            <p class="carousel__price">70 UAH</p>
+          </li>
+
+          <li class="carousel__element" id="item1">
+            <img class="carousel__img" src="./images/oil.png" alt="Hydrophilic oil">
+            <h3 class="carousel__img-title">Hydrophilic Oil</h3>
+            <p class="carousel__price">160 UAH</p>
+          </li>
+  
+          <li class="carousel__element" id="item2">
+            <img class="carousel__img" src="./images/faceCream.png" alt="Face cream">
+            <h3 class="carousel__img-title">Face cream</h3>
+            <p class="carousel__price">210 UAH</p>
+          </li>
+  
+          <li class="carousel__element" id="item3">
+            <img class="carousel__img" src="./images/ubtan.png" alt="Ubtan">
+            <h3 class="carousel__img-title">Ubtan</h3>
+            <p class="carousel__price">160 UAH</p>
+          </li>
+
+          <li class="carousel__element" id="item4">
+            <img class="carousel__img" src="./images/shampoo.png" alt="Almond Shampoo with Lavender Oil">
+            <h3 class="carousel__img-title">Almond Shampoo</h3>
+            <p class="carousel__price">70 UAH</p>
+          </li>
+        </ul>
+
+        <div class="carousel__sliders">
+          <button class="arrow__container" id="sliderLeft" type="button" value="-1" disabled>
+            <i class="arrow arrow--left"></i>
+          </button>
+          
+          <button class="arrow__container" id="sliderRight" type="button" value="1">
+            <i class="arrow arrow--right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="container">
+        <button class="button shop__button" id="buy" type="button" disabled>Buy</button>
+      </div>
+    </section>
+
+    <section class="creators container container--left-side-from-tablet container--desktop">
+      <div class="decor">Witch of mountain winds</div>
+      <img class="creators__img" src="./images/creatorsSection.png" alt="Little birds">
+
+      <div class="creators__content">
+        <h2 class="h2">About the creators</h2>
+        <p class="creators__p">
+          My name is Victoria, I’m a master at candle making and natural cosmetics. In the past, a cynologist, was engaged in herbs, made layouts on the Tarot.
+        </p>
+        <p class="creators__p">
+          I am also a volunteer to save wild birds in distress, a consultant to the Phoenix Wildlife Rehabilitation Center, a member of the Society for the Conservation of Birds of Ukraine with the support of Birdlife International.
+        </p>
+        <p class="creators__p creators__p--extra">
+          My husband and I live in the Carpathian region in the city of Chernivtsi. I dream of my center for the rehabilitation of wild birds, as it is very difficult to rescue birds in a rented communal apartment.
+        </p>
+        <a class="link creators__link" href="">Learn more</a>
+        <button class="button creators__button">To contact us</button>
+      </div>
+    </section>
+
+    <section class="powder">
+      <div class="container container--left-side container--desktop">
+        <div class="decor">Witch of mountain winds</div>
+
+        <h2 class="h2 powder__title">Ayurvedic Tooth Powder</h2>
+        <picture>
+          <source media="(min-width: 1024px)" srcset="./images/bottle1024.png">
+          <source media="(min-width: 768px)" srcset="./images/bottle768.png">
+          <img 
+            class="powder__bottle"
+            src="./images/bottle320.png"
+            alt="Bottle"
+          >
+        </picture>
+
+        <ul class="powder__list">
+          <li>Kaolin</li>
+          <li>Sivak</li>
+          <li>Calcium Carbonate</li>
+          <li>Licorice Root</li>
+          <li>Turmeric</li>
+        </ul>
+
+        <a class="link powder__link" href="">Learn more</a>
+      </div>
+
+      <div class="points container">
+        <div class="points__point">
+          <img class="points__img" src="./images/point1.png" alt="Microplastics">
+          <p class="points__p">No synthetics and microplastics</p>
+        </div>
+        <div class="points__point">
+          <img class="points__img" src="./images/point2.png" alt="Recycling">
+          <p class="points__p">Product packaging can be recycled or reused</p>
+        </div>
+        <div class="points__point">
+          <img class="points__img" src="./images/point3.png" alt="Leaf">
+          <p class="points__p">Only natural ingredients</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact container container--left-side-from-tablet container--desktop" id="contact">
+      <div class="decor">Witch of mountain winds</div>
+      <img class="contact__img" src="./images/contactSection.png" alt="Bird">
+
+      <div class="contact__content">
+        <h2 class="h2">Contact us</h2>
+        <p class="contact__p">We will help you to choose a product that suits you and answer your questions</p>
+        <form action="" class="contact__form">
+          <input class="input" type="text" placeholder="Your name">
+          <input class="input" type="text" placeholder="E-Mail">
+          <input class="input" type="text" placeholder="Phone number">
+          <input class="input contact__last-input" type="text" placeholder="Your message">
+          <button class="button contact__button" type="button">Send a message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <ul class="footer__list1">
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li class="footer__icons">
+          <a href="#"><img class="footer__icon" src="./images/facebookIcon.png" alt="Facebook icon"></a>
+          <a href="#"><img src="./images/instagramIcon.png" alt="Instagram icon"></a>
+        </li>
+      </ul>
+  
+      <ul class="footer__list2">
+        <li>Ukraine</li>
+        <li>support.mountain@gmail.com</li>
+        <li><a href="tel:+380934476839">+380934476839</a></li>
+        <li>Support is available Monday - Friday 9am-6pm</li>
+      </ul>
+  
+      <p class="footer__copyright">© 2019 witch of mountain winds</p>
+      <li class="footer__icons-laptop">
+        <a href="#"><img class="footer__icon" src="./images/facebookIcon.png" alt="Facebook icon"></a>
+        <a href="#"><img src="./images/instagramIcon.png" alt="Instagram icon"></a>
+      </li>
+    </div>
+  </footer>
+
+  <div class="menu container">
+    <button class="close" type="button"></button>
+
+    <ul class="menu__list">
+      <li><a href="#shop">Shop</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </div>
+
+  <script src="./scripts/index.js"></script>
+</body>
+</html>

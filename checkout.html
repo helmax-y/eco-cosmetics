@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="index.css">
+  <title>Checkout</title>
+</head>
+<body>
+  <header class="header container">
+    <button class="header__menu-icon" type="button">
+      <img src="./images/menuIcon.png" alt="Menu icon">
+    </button>
+
+    <img class="header__logo" src="./images/logoIcon.png" alt="Logotype">
+    <img class="header__logo-w-text" src="./images/logoIconWithText.png" alt="Logotype">
+
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+
+    <button class="header__basket" type="button">
+      <img src="./images/basketIcon.png" alt="Basket icon">
+    </button>
+  </header>
+
+  <div class="container">
+    <h1 class="checkout__title1">Checkout</h1>
+  </div>
+  
+  <ul class="checkout__steps">
+    <li class="checkout__step active">Shipping</li>
+    <li class="checkout__step step-2">Payment</li>
+    <li class="checkout__step step-3">Confirmation</li>
+    <hr class="checkout__underline">
+  </ul>
+
+  <div class="checkout__sections">
+    <form class="checkout__section shipping container">
+      <div class="shipping__inputs">
+        <h2 class="checkout__title2">Shipping</h2>
+  
+        <div class="shipping__left-inputs">
+          <input class="input shipping__input" type="text" placeholder="Full Name" required name="name">
+          <p class="shipping__error">Please enter your full name</p>
+          <input class="input shipping__input" type="email" placeholder="E-Mail" required name="email">
+          <p class="shipping__error">Please enter a valid E-Mail address</p>
+          <input class="input shipping__input" type="text" placeholder="Country" required name="country">
+          <p class="shipping__error">Please enter your country</p>
+        </div>
+
+        <div class="shipping__right-inputs">
+          <input class="input shipping__input" type="text" placeholder="City" required name="city">
+          <p class="shipping__error">Please enter your city</p>
+          <input class="input shipping__input" type="text" placeholder="Postal Code" pattern="^\d{5}(-\d{4})?$" required name="zip">
+          <p class="shipping__error">Please enter a valid postal code</p>
+          <input class="input shipping__input" type="text" placeholder="Address" required name="address">
+          <p class="shipping__error">Please enter your address</p>
+        </div>
+      </div>
+
+      <button class="button checkout__button" id="toPayment" type="submit">Next</button>
+    </form>
+
+    <section class="checkout__section payment container">
+      <div>
+        <h2 class="checkout__title2">Payment</h2>
+  
+        <p class="payment__p">Choose payment option</p>
+
+        <div class="payment__steps">
+          <div class="payment__card">
+            <img src="./images/creditCard.png" alt="Credit card">
+            <p class="payment__p">Credit card</p>
+          </div>
+    
+          <div class="payment__delivery">
+            <img src="./images/delivery.png" alt="Delivery car">
+            <p class="payment__p payment__p--first">Payment on delivery</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="button checkout__button" id="toConfirmation" type="button">Next</button>
+    </section>
+
+    <section class="checkout__section confirmation container">
+      <div>
+        <h2 class="checkout__title2">Confirmation</h2>
+  
+        <p class="confirmation__p">Your order is accepted<br>Thank you for choosing us</p>
+        <img class="confirmation__img" src="./images/leaf.png" alt="Leaf">
+      </div>
+
+      <a class="link confirmation__link" href="./#shop">Back to shop</a>
+    </section>
+  </div>
+
+  <div class="menu container">
+    <button class="close" type="button"></button>
+
+    <ul class="menu__list">
+      <li><a href="./#shop">Shop</a></li>
+      <li><a href="./#contact">Contact</a></li>
+      <li><a href="./#about">About</a></li>
+    </ul>
+  </div>
+
+  <script src="./scripts/checkout.js"></script>
+</body>
+</html>
